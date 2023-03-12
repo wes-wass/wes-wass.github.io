@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wes Wasserburger's Website</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Wes Wasserburger</a>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>            
+            </div>
+          </nav>
+          <!-- Navbar End -->
+
+          <!-- Hero section -->
+          <section id="home">
+              <div class="container" width = 1000>
+                  <div class="row">
+                      <div class="col">
+                          <h1>Hi, I'm Wes</h1>
+                          <p> I am a current sophomore student and research assistant at Trinity University, and I'm originally from Austin, Texas! I am studying theoretical economics and mathematical finance, with a minor in mathematics. I am passionate about causal and predictive research, econometrics, and the process of making new discoveries through data analysis. I seek to gain additional research experience, and I aim to get a PhD in economics once I graduate.</p>
+                          <p> I coded this website as a side project to showcase my interests and personality in a way that is more telling than a resume! However, I've attached my LinkedIn and Resume below for a more concise summary of my experiences.</p>
+                          <br>
+                          <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='https:www.linkedin.com/in/weswasserburger'">LinkedIn</button>
+                          <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='Wasserburger_Wes_Resume_Final.pdf'" float = "right">Resume</button>
+                        </div>
+                        <div class="col-2">
+                         </div>
+                        <div class="col">
+                           <img src="myself.jpg" height = 400 width = 300>
+                          </div>
+                       
+                  </div>
+
+              </div>
+          </section>
+         <!-- Hero section ends here -->
+
+           <!-- About Us -->
+          <section id="education">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col">
+                          <!-- another image can be inserted here -->
+                          <img src="trinity.JPG" alt="Go Tigers!" height = 475 width = 525 class="center">
+                        </div>
+                      <div class="col">
+                          <h1>Education</h1>
+                          <p>I currently attend Trinity University, a small liberal arts college in San Antonio, Texas. I am a member of the school's NCAA Division III swim and dive team, where I have received All-Conference honors. I am also a member of the Alpha Kappa Psi business fraternity.</p>
+                          <p>I currently am pursuing two majors. My primary major is Theoretical Economics, which is a concentration of economic study that emphasizes a strong mathematical background, econometrics, and microeconomic/macroeconomic theory. Relavant coursework in this major includes Advanced Microeconomic Theory, Game Theory, Econometrics, Probability, Mathematical Statistics, Lienar Algebra, and Real Analysis.</p>
+                          <p> My second major, mathematical finance, emphasizes the mathematics behind markets, with relavant coursework including financial mathematics, international finance, and the economics of financial markets.</p>
+                          <p>I have also been fortunate enough to receive a Microsoft Excel Expert Certification, just by completing coursework for my liberal arts requirements. </p> <br>
+                          <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='https://www.trinity.edu/academics/cosb/econ/economics-ba'">My Curriculum</button>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <!-- End of About Us -->
+
+          <!-- Projects section -->
+          <section id = experience>
+          <div class="container">
+              <div class="row align-items-center projects">
+                  <div class="col"> 
+                    <h1>Experience</h1>
+                    <p><b>Current Position: Research Assistantship</b> <br>
+                    <i>Trinity University Economics Department</i><br><br>
+                    I am currently working as a research assistant in the Trinity University Department of Economics. I am currently assisting a faculty member with a project related to Rosenwald schools in the United States. For context, Rosenwald schools were educational facilities opened in the United States during the Jim Crow 
+                    era that allowed African-American students in the South, and they were frequently the only shot at an education for these students. The professor that I am working with was able to scrape information on every single Rosenwald school, which is incredible within itself, but the data unfortunately didn't come in ready to use (missing county fip codes, county name misspellings, etc.).
+
+            
+                  </p>
+                  <p>
+                    I was assigned the task of cleaning the dataset, which primarily focused on fixing county names, where the respective Rosenwald schools resided, that were incorrectly spelled, outdated, or jointed (ie: two counties were listed instead of one). Using Stata, and a mechanism my professor set up to check
+                    the dataset for incorrect county names, I was able to pinpoint and fix a significant portion of the incorrect county names. From there, I was able to merge the dataset, with its correct coutny names, to another stylesheet with
+                    the counties' fips codes, which was another goal for my professor.
+                  </p>
+
+                  <p>We are soon going to embark on the next stages of this research project. First, we will clean other aspects of the dataset that aren't cohesive, for example, certain schools are listed with no name. Once this is complete, since we have fips codes and GUI data, we will hopefully
+                    be able to merge this dataset with other datasets that categorize their data by US county. Then, we can embark on the research process!
+                  </p>
+                  </div>
+
+                  <p><b>Remote Data Analyst</b> <br>
+                    <i>Sharkscope</i><br><br>
+                      One of my previous experience positions that is relavant to my future as an economics researcher was my remote data analyst position at Sharkscope, an online poker statistics company.
+
+            
+                  </p>
+                  <p>
+                    I was assigned the task of running regressional analysis on a large dataset containing the past 30,000 poker games played on the website at that time. There were 18 variables associated with each individual game (entry), including date, player, player skill, money bet, money won, and more. Our variable of interest, however, was the amount staked in a poker game.
+                    My task was to figure out if there were any variables that were significantly correlated with whether a player staked (paid someone else's buy-in in the hopes to take a part of their winnings), and to what extent. I was given a lot of freedom on how I wanted to go about this, so I decided to run both multiple linear regression and difference-of-means t-tests.
+                  </p>
+
+                  <p>
+                    I used the R programming language to run these analyses. In the end, I was able to find multiple statistically significant, predictive correlations between various inputs in the dataset and the staking variables. I was never able to satisfy OLS assumptions for causal analysis, but I argue that I was able to find useful trends that would help Sharkscope understand the
+                    staking patterns of its clients.
+                  </p>
+
+                  <p><b>Other Experience</b> <br>
+                    <i>Math Peer Tutor, Customer Service Representative, Lifeguard</i><br><br>
+                      I have held other positions in the past that, although not as relavant to my future goal of research, still helped me develop important soft skills.
+            
+                  </p>
+                  <p>
+                    As a peer tutor for Calculus II, I learned how to work with students who didn't fully understand the subject material they were working with. I was able to emphathize with them, and 
+                    see their confusions from their point of view. Then, we were able to work together to help them understand the material. This job allowed me to gain skills working with, and teaching students, skills I hope to potentially
+                    apply to a professorship one day.
+                  </p>
+
+                  <p>
+                    I have also spent multiple summers working as both a customer service representative and a lifeguard for my local pool. Through these positions, I've learned how to effecetively deal with people. As a customer service rep, I took 
+                    many phone calls, emails, and in-person inquiries per day, which allowed me to develop my "people-skills" and how to deal with difficult patrons. Through my lifeguard job, I've learned to be observant, confident (in enforcing rules),
+                    and to be a professional. 
+                  </p>
+                  </div>
+                  <div class="row align-items-center">
+                    
+                    
+                    
+                </div>
+              </div>
+          </div>
+        </section>
+          <!-- End of Projects Section -->
+
+          <!-- Interests Section-->
+          <div class="container" id = "interests">
+            <div class="row align-items-center projects">
+                <div class="col"> 
+                  <h1>Interests</h1>
+                  <p>Outside of my academic interests, I have a few hobbies and intersts that I do in my free time.</p> <br>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                      <div class="card mb-3" style="width: 350px;">
+                          <img src="swimming.JPG" class="card-img-top" alt="me in the pool" width = 348px height = 348px>
+                          <div class="card-body">
+                            <h5 class="card-title">Swimming</h5>
+                            <p class="card-text">As I mentioned above, I am a current member of Trinity University's Men's Swim Team. I swim sprint breaststroke, butterfly, and freestyle. My 100 breaststroke time of 57.59 is #6 in program history and my 100 butterfly time of 50.62 is #11. I've been swimming since I was a kid and I plan to be a lifelong enjoyer of the sport.</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card mb-3" style="width: 350px;">
+                          <img src="travel.JPG" alt="me next to a post box" width = 348px height = 348px>
+                          <div class="card-body">
+                            <h5 class="card-title">Travel</h5>
+                            <p class="card-text">Travel is a recent passion of mine that I picked up when my family went to England for a wedding. I love exploring new places, trying the local foods and seeing the local sights. There is something so interesting about seeing a different way of life and culture, even when travelling to a different area of the US.</p>
+                           
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card mb-3" style="width: 350px;">
+                          <img src="guitar.JPG" alt="me playing guitar" width = 348px height = 348px>
+                          <div class="card-body">
+                            <h5 class="card-title">Guitar</h5>
+                            <p class="card-text">In my free time, I frequently play the acoustic and electric guitars. I've been playing for almost a decade now, and I enjoy playing songs of all genres: rock, pop, alternative, and even metal. I even used to be a in a band. My goal is to one day play "Snow" by the Red Hot Chili Peppers at full speed.</p>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+          <!-- End of Interest Section-->
+
+          <!-- Contact Section -->
+          <section id="contact">
+            <div class="container">
+                <div class="row align-items-center projects">
+                    <div class="col"> 
+                      <h1>Contact me</h1>
+                      <p>This contact form is still under construction, so unfortunately it does not work yet. I don't list my email on this website for security reasons. However, if you have any inquiries, please message my LinkedIn!</p>
+                    </div>
+                    <br>
+                    <br>
+                    <!--Section: Contact v.2-->
+<section class="mb-4">
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="mx-auto col-10 col-md-8 col-lg-6" class="center">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div><br>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div> <br>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div> <br>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="validateForm();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+
+  </div>
+
+
+</section>
+<!--Section: Contact v.2-->
+                </div>
+            </div>
+            <p>Copyright 2023 Wes Wasserburger. Credit to Swathi Krishna for the stunning Bootstrap template, and MDB for the contact form template.</p>
+
+          </section>
+          <!-- End of contact section -->
+
+          <!-- JavaScript Bundle with Popper -->
+          
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+          <script> function validateForm() {
+            var name =  document.getElementById('name').value;
+            if (name == "") {
+                document.querySelector('.status').innerHTML = "Name cannot be empty!";
+                return false;
+            }
+            var email =  document.getElementById('email').value;
+            if (email == "") {
+                document.querySelector('.status').innerHTML = "Email cannot be empty!";
+                return false;
+            } else {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(!re.test(email)){
+                    document.querySelector('.status').innerHTML = "Email format invalid!";
+                    return false;
+                }
+            }
+            var subject =  document.getElementById('subject').value;
+            if (subject == "") {
+                document.querySelector('.status').innerHTML = "Subject cannot be empty!";
+                return false;
+            }
+            var message =  document.getElementById('message').value;
+            if (message == "") {
+                document.querySelector('.status').innerHTML = "Message cannot be empty!";
+                return false;
+            }
+            document.querySelector('.status').innerHTML = "Sending...";
+            document.getElementById('status').innerHTML = "Sending...";
+formData = {
+  'name': $('input[name=name]').val(),
+  'email': $('input[name=email]').val(),
+  'subject': $('input[name=subject]').val(),
+  'message': $('textarea[name=message]').val()
+};
+
+
+$.ajax({
+  url: "mail.php",
+  type: "POST",
+  data: formData,
+  success: function (data, textStatus, jqXHR) {
+
+    $('#status').text(data.message);
+    if (data.code) //If mail was sent successfully, reset the form.
+      $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+  },
+  error: function (jqXHR, textStatus, errorThrown) {
+    $('#status').text(jqXHR);
+  }
+});
+          } </script>
+
+          
+        </body>
+</html>
